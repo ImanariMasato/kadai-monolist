@@ -1,3 +1,6 @@
-<h1>Haveランキング</h1>
+<% provide :title, "Have ランキング" %>
+<% provide :ranking_type, "Have" %>
 
-<%= render 'rankings/ranking', items: @items, ranking_counts: @ranking_counts %>
+<h1><%= yield :ranking_type %>ランキング</h1>
+
+<%= render 'rankings/ranking', items: @items, ranking_counts: @ranking_counts, count: @count %>

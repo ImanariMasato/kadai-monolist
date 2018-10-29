@@ -1,3 +1,6 @@
+<% provide :title, "Want ランキング" %>
+<% provide :ranking_type, "Want" %>
+
 <h1>Wantランキング</h1>
 
-<%= render 'rankings/ranking', items: @items, ranking_counts: @ranking_counts %>
+<%= render 'rankings/ranking', items: @items, ranking_counts: @ranking_counts, count: @count %>
